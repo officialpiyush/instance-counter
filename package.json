@@ -1,6 +1,6 @@
 {
   "name": "instance-counter",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "An Instance Counter For Modmail-Plugins",
   "main": "build/src/index.js",
   "repository": "https://github.com/officialpiyush/instance-counter.git",
