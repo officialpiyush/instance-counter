@@ -1,6 +1,6 @@
 {
   "name": "instance-counter",
-  "version": "1.1.5",
+  "version": "1.2.0",
   "description": "An Instance Counter For Modmail-Plugins",
   "main": "build/src/index.js",
   "repository": "https://github.com/officialpiyush/instance-counter.git",
@@ -12,6 +12,9 @@
     "build": "tsc",
     "test": "tslint -p tsconfig.json",
     "postinstall": "tsc"
+  },
+  "engines": {
+    "node": "10.x"
   },
   "devDependencies": {
     "@types/body-parser": "^1.17.0",
