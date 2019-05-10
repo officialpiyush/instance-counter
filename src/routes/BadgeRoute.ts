@@ -12,42 +12,42 @@ BadgeRoute.use(json());
 BadgeRoute.get("/tags", (req, res) => {
     db.findOne({ id: 0 }, (err, info: IRDB) => {
         if (err) { return returnBadge(`${base}/Error-True-red.svg` , res); }
-        return returnBadge(`${base}/Instances-${info.data.tags.instances}-brightgreen.svg`, res);
+        return returnBadge(`${base}/Downloads-${info.data.tags.instances}-brightgreen.svg`, res);
     });
 });
 
 BadgeRoute.get("/translator", (req, res) => {
     db.findOne({ id: 0 }, (err, info: IRDB) => {
         if (err) { return returnBadge(`${base}/Error-True-red.svg`, res); }
-        return returnBadge(`${base}/Instances-${info.data.translator.instances}-brightgreen.svg`, res);
+        return returnBadge(`${base}/Downloads-${info.data.translator.instances}-brightgreen.svg`, res);
     });
 });
 
 BadgeRoute.get("/dmonjoin", (req, res) => {
     db.findOne({ id: 0 }, (err, info: IRDB) => {
         if (err) { return returnBadge(`${base}/Error-True-red.svg`, res); }
-        return returnBadge(`${base}/Instances-${info.data.dmonjoin.instances}-brightgreen.svg`, res);
+        return returnBadge(`${base}/Downloads-${info.data.dmonjoin.instances}-brightgreen.svg`, res);
     });
 });
 
 BadgeRoute.get("/leaveserver", (req, res) => {
     db.findOne({ id: 0 }, (err, info: IRDB) => {
         if (err) { return returnBadge(`${base}/Error-True-red.svg`, res); }
-        return returnBadge(`${base}/Instances-${info.data.leaveserver.instances}-brightgreen.svg`, res);
+        return returnBadge(`${base}/Downloads-${info.data.leaveserver.instances}-brightgreen.svg`, res);
     });
 });
 
 BadgeRoute.get("/announcement", (req, res) => {
     db.findOne({ id: 0 }, (err, info: IRDB) => {
         if (err) { return returnBadge(`${base}/Error-True-red.svg`, res); }
-        return returnBadge(`${base}/Instances-${info.data.announcement.instances}-brightgreen.svg`, res);
+        return returnBadge(`${base}/Downloads-${info.data.announcement.instances}-brightgreen.svg`, res);
     });
 });
 
 BadgeRoute.get("/hastebin", (req, res) => {
     db.findOne({ id: 0 }, (err, info: IRDB) => {
         if (err) { return returnBadge(`${base}/Error-True-red.svg`, res); }
-        return returnBadge(`${base}/Instances-${info.data.hastebin.instances}-brightgreen.svg`, res);
+        return returnBadge(`${base}/Downloads-${info.data.hastebin.instances}-brightgreen.svg`, res);
     });
 });
 
