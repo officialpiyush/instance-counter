@@ -11,7 +11,7 @@ BadgeRoute.use(json());
 
 BadgeRoute.get("/tags", (req, res) => {
     db.findOne({ id: 0 }, (err, info: IRDB) => {
-        if (err) { return returnBadge(`${base}/Error-True-red.svg` , res); }
+        if (err) { return returnBadge(`${base}/Error-True-red.svg`, res); }
         return returnBadge(`${base}/Downloads-${info.data.tags.instances}-brightgreen.svg`, res);
     });
 });
@@ -53,10 +53,11 @@ BadgeRoute.get("/hastebin", (req, res) => {
 
 async function returnBadge(link: string, res: any) {
     fetch(link).then((resp) => (resp as any).buffer()).then((buffer) => {
+        res.set("Cache-Control", "public, max-age=300");
         (res as any).writeHead(200, {
             "Content-Length": buffer.length,
             "Content-Type": "image/svg+xml",
-          });
+        });
         (res as any).end(buffer);
     });
 }
