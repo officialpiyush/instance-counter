@@ -1,6 +1,7 @@
 <div align="center">
     <img src="https://i.vgy.me/XJTqqm.png" align="center">
     <br>
+    <br>
     <strong><i>A Simple API To Get Downloads Of ModMail Plugins</i></strong>
     <br>
     <br>
@@ -11,11 +12,9 @@
     <a href="https://travis-ci.com/officialpiyush/instance-counter">
         <img src="https://img.shields.io/travis/com/officialpiyush/instance-counter.svg?style=for-the-badge" alt="Travis">
     </a>
-
     <a href="https://github.com/officialpiyush/instance-counter">
     <img src="https://img.shields.io/requires/github/officialpiyush/instance-counter.svg?style=for-the-badge" alt="Requirements">
     </a>
-
     <a href="https://nodejs.org">
     <img src="https://img.shields.io/badge/node-10-brightgreen.svg?style=for-the-badge" alt="Node">
     </a>
