@@ -53,8 +53,8 @@ BadgeRoute.get("/hastebin", (req, res) => {
 
 async function returnBadge(link: string, res: any) {
     fetch(link).then((resp) => (resp as any).buffer()).then((buffer) => {
-        res.set("Cache-Control", "public, max-age=300");
         (res as any).writeHead(200, {
+            "Cache-Control": "no-cache",
             "Content-Length": buffer.length,
             "Content-Type": "image/svg+xml",
         });
