@@ -28,5 +28,17 @@ export default interface IDB extends Document {
             "botID": string[],
             "instances": number,
         },
+        "reacttocontact": {
+            "botID": string[],
+            "instances": number,
+        },
+        "moderation": {
+            "botID": string[],
+            "instances": number,
+        },
+        "backupdb": {
+            "botID": string[],
+            "instances": number,
+        },
     };
 }

@@ -11,6 +11,10 @@ const InstanceSchema = new Schema({
             botID: Array,
             instances: { type: Number, default: 0 },
         },
+        backupdb: {
+            botID: Array,
+            instances: { type: Number, default: 0 },
+        },
         dmonjoin: {
             botID: Array,
             instances: { type: Number, default: 0 },
@@ -20,6 +24,14 @@ const InstanceSchema = new Schema({
             instances: { type: Number, default: 0 },
         },
         leaveserver: {
+            botID: Array,
+            instances: { type: Number, default: 0 },
+        },
+        moderation: {
+            botID: Array,
+            instances: { type: Number, default: 0 },
+        },
+        reacttocontact: {
             botID: Array,
             instances: { type: Number, default: 0 },
         },
