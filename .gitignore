@@ -3,4 +3,8 @@ node_modules
 src/test.ts
 build
 yarn-error.log
+<<<<<<< HEAD
 .vscode/ed.code-snippets
+=======
+.vscode
+>>>>>>> a9fdb2e0bc7d701385b1fdd4a2105cd41fbf6acd
