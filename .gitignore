@@ -3,3 +3,4 @@ node_modules
 src/test.ts
 build
 yarn-error.log
+.vscode/ed.code-snippets
