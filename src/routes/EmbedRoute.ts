@@ -44,7 +44,7 @@ async function returnBadge(link: string, res: any) {
         (res as any).writeHead(200, {
             "Cache-Control": "max-age=600",
             "Content-Length": buffer.length,
-            "Content-Type": "image/svg+xml",
+            "Content-Type": "image/png",
         });
         (res as any).end(buffer);
     });
