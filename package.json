@@ -27,6 +27,8 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
+    "canvas": "^2.5.0",
+    "canvas-constructor": "^3.0.3",
     "express": "^4.16.4",
     "mongoose": "^5.5.7",
     "node-fetch": "^2.5.0",

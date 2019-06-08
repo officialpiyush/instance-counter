@@ -13,7 +13,7 @@
         "strict": true,
         "target": "esnext",
         "plugins": [{ "name": "typescript-tslint-plugin" }],
-        "types": ["node"]
+        "types": ["node","canvas-constructor"]
     },
     "exclude": ["node_modules"],
     "include": ["src", "config.ts"]
