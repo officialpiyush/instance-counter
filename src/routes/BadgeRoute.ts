@@ -9,9 +9,23 @@ const base = "https://img.shields.io/badge";
 
 BadgeRoute.use(json());
 
-const aPlugins: any = fetch("https://raw.githubusercontent.com/officialpiyush/modmail-plugins/master/plugins.json")
-    .then((res: Response) => res.json())
-    .then((j: JSON | any) => j.allowed);
+
+const aPlugins  = [
+       "tags",
+       "announcement",
+       "dmonjoin",
+       "hastebin",
+       "leaveserver",
+       "translator",
+       "reacttocontact",
+       "moderation",
+       "backupdb",
+    ];
+
+
+// const aPlugins: any = fetch("https://raw.githubusercontent.com/officialpiyush/modmail-plugins/master/plugins.json")
+//     .then((res: Response) => res.json())
+//     .then((j: JSON | any) => j.allowed);
 
 BadgeRoute.get("/:ist", (req, res) => {
     const ist: string = (req as any).params.ist;
