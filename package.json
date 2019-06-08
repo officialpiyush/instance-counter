@@ -1,6 +1,6 @@
 {
   "name": "instance-counter",
-  "version": "3.3.1",
+  "version": "4.0.0",
   "description": "An Instance Counter For Modmail-Plugins",
   "main": "build/src/index.js",
   "repository": "https://github.com/officialpiyush/instance-counter.git",
@@ -27,6 +27,8 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
+    "canvas": "^2.5.0",
+    "canvas-constructor": "^3.0.3",
     "express": "^4.16.4",
     "mongoose": "^5.5.7",
     "node-fetch": "^2.5.0",
