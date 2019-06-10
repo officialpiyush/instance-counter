@@ -30,7 +30,7 @@
     "canvas": "^2.5.0",
     "canvas-constructor": "^3.0.3",
     "express": "^4.16.4",
-    "mongoose": "^5.5.7",
+    "mongoose": "^5.5.14",
     "node-fetch": "^2.5.0",
     "typescript": "^3.4.5"
   }
