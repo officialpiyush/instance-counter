@@ -31,7 +31,7 @@ BadgeRoute.get("/:ist", (req, res) => {
     const ist: string = (req as any).params.ist;
     if (!aPlugins.includes(ist)) {
         return returnBadge(
-            "404-Instance%20Not%20Found-red.svg?style=for-the-badge",
+            `${base}/404-Instance%20Not%20Found-red.svg?style=for-the-badge`,
             res);
     }
     db.findOne({ id: 0 }, (err: any, info: IRDB) => {
