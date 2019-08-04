@@ -23,7 +23,7 @@ APIRoute.post("/instances/:ist", async (req, res): Promise<any> => {
     const ist: string = (req as any).params.ist;
     const id = (req as any).body.id;
     if (!id) { return res.json({ sucess: false }); }
-    if (!aPlugins.incudes(ist)) { return res.json({ sucess: false }); }
+    if (!aPlugins.includes(ist)) { return res.json({ sucess: false }); }
     db.findOne({ id: 0 }, async (err, info: IRDB) => {
         if (err) {
             console.error(err);
