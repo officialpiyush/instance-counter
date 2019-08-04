@@ -9,9 +9,15 @@ const APIRoute = Router();
 APIRoute.use(json());
 
 // tslint:disable-next-line: max-line-length
-const aPlugins: any = fetch("https://raw.githubusercontent.com/officialpiyush/modmail-plugins/master/plugins.json")
+let aPlugins: any = fetch("https://raw.githubusercontent.com/officialpiyush/modmail-plugins/master/plugins.json")
     .then((res: Response) => res.json())
     .then((j: JSON | any) => j.allowed);
+    
+async function resolvePlugin() {
+        aPlugins = await aPlugins;
+};
+
+resolvePlugin();
 
 APIRoute.post("/instances/:ist", async (req, res): Promise<any> => {
     const ist: string = (req as any).params.ist;
