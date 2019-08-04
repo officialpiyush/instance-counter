@@ -9,21 +9,15 @@ const base = "https://img.shields.io/badge";
 
 EmbedRoute.use(json());
 
-const aPlugins  = [
-    "tags",
-    "announcement",
-    "dmonjoin",
-    "hastebin",
-    "leaveserver",
-    "translator",
-    "reacttocontact",
-    "moderation",
-    "backupdb",
- ];
+let aPlugins: any = fetch("https://raw.githubusercontent.com/officialpiyush/modmail-plugins/master/plugins.json")
+    .then((res: Response) => res.json())
+    .then((j: JSON | any) => j.allowed);
+    
+async function resolvePlugin() {
+        aPlugins = await aPlugins;
+};
 
-// const aPlugins: any = fetch("https://raw.githubusercontent.com/officialpiyush/modmail-plugins/master/plugins.json")
-//     .then((res: Response) => res.json())
-//     .then((j: JSON | any) => j.allowed);
+resolvePlugin();
 
 EmbedRoute.get("/:ist", (req, res) => {
     const ist: string = (req as any).params.ist;
