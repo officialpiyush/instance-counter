@@ -71,13 +71,13 @@ class Database {
         .collection("instances")
         .findOne({ id: 0 });
       if (
-        doc === null || !doc[instance] ||
-        doc.data[instance].instances === null ||
-        doc.data[instance].botID === null
+        doc === null || !doc.data[instance] ||
+        !doc.data[instance].instances
       ) {
         return 0;
-      }
+      } else {
       return doc.data[instance].instances;
+      }
     } catch (err) {
       console.error(err);
       return -1;
