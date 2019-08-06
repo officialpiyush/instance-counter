@@ -47,7 +47,7 @@ class Database {
         bkl = [];
       }
       bkl.push(botid);
-      const $query: any = doc.data ? doc.data : {};
+      const $query: any = doc && doc.data ? doc.data : {};
       $query[instance] = { instances: instances + 1, botID: bkl };
       await (this.db as any).collection("instances").findOneAndUpdate(
         { id: 0 },
