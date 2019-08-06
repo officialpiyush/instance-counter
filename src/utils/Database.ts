@@ -16,7 +16,7 @@ class Database {
       this.client = await MongoClient.connect(this.uri, {
         useNewUrlParser: true
       });
-      this.db = this.client.db("url");
+      this.db = this.client.db("instance-counter");
       return this.client;
     } else {
       return this.client;
