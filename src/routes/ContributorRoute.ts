@@ -1,11 +1,12 @@
 import { Canvas } from "canvas-constructor";
 import { Router } from "express";
 import fetch, { Response } from "node-fetch";
+import config from "../../config";
 
 const ContributorRoute = Router();
 
 ContributorRoute.get("/", async (req, res) => {
-    const contri = await fetch("https://api.github.com/repos/officialpiyush/modmail-plugins/contributors")
+    const contri = await fetch(`https://api.github.com/repos/${config.repo}/contributors`)
         .then((r: Response) => r.json());
     let base = 80;
     const x = 160 * contri.length;
