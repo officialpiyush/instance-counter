@@ -32,6 +32,6 @@
     "express": "^4.16.4",
     "mongodb": "^3.3.5",
     "node-fetch": "^2.5.0",
-    "typescript": "^3.7.3"
+    "typescript": "^3.7.5"
   }
 }
