@@ -23,7 +23,7 @@
     "@types/node-fetch": "^2.5.4",
     "tslint": "^5.20.1",
     "typescript-tslint-plugin": "^0.5.5",
-    "@types/mongodb": "^3.3.11"
+    "@types/mongodb": "^3.3.16"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
