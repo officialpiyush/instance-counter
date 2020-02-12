@@ -30,7 +30,7 @@
     "canvas": "^2.6.0",
     "canvas-constructor": "^3.0.3",
     "express": "^4.16.4",
-    "mongodb": "^3.3.5",
+    "mongodb": "^3.5.3",
     "node-fetch": "^2.5.0",
     "typescript": "^3.7.3"
   }
