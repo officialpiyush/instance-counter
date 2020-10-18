@@ -28,7 +28,7 @@
 
 # Selfhosting?
 
-* Soon™
+* Not supported. Contact `Piyush#4332` on discord
 
 # Authors
 
